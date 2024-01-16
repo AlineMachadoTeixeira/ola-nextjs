@@ -1,15 +1,19 @@
+import Link from "next/link";
+
 export default function Menu() {
-  <nav>
-    <ul>
-      <li>
-        <a href="">Home</a>
-      </li>
-      <li>
-        <a href="">Equipe</a>
-      </li>
-      <li>
-        <a href="">Serviços</a>
-      </li>
-    </ul>
-  </nav>;
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/equipe">Equipe</Link>
+        </li>
+        <li>
+          <Link href="/servicos">Serviços</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
