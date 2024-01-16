@@ -38,3 +38,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Usando terminal
+
+- `npm run dev`
+- `npm run dev -- --host 0.0.0.0 --open` Entrar direto e abre o navegador já com a pagina
+  Local: http://localhost:5173/ (computador) ➜ Network: http://10.20.46.47:5173/(celular)
+- cls --> limpar pasta
+- dir --> para achar pasta
+- cd --> acha arquivo um por um
+- node espaço +nome da pasta --> ver o resultado que está na pasta com console.log
+- cd.. --> volta algumas pastas ou uma pasta
+- ctrl +C --> para parar o CMD ou qualquer
