@@ -1,44 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
 ## Usando terminal
 
 - `npm run dev`
@@ -50,3 +9,29 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - node espaço +nome da pasta --> ver o resultado que está na pasta com console.log
 - cd.. --> volta algumas pastas ou uma pasta
 - ctrl +C --> para parar o CMD ou qualquer
+
+# Anotações gerais sobre o Next.js
+
+Next.js é um framework Fullstack que permite criar aplicações React modernas e otimizadas para mecanismos de busca.
+
+Next.js faz a renderização do HTML no servidor, ou seja, é `SSR Servir Side Rendering`.
+
+Para criar a navegar por páginas na aplicação Next.js, basta criar componentes/páginas no diretório `pages` que automaticamente elas estarão disponiveis para navegação através da rotas.
+
+## Sobre os arquivos \_app.sj e \_document.js
+
+Está na parte pages \_app.js \_document.js
+Arquivos de configuração global para personalizar o comportamento da aplicação Next.js
+
+### \_app.sj
+
+- Adicionar componentes globais ao app
+- Pode ser usado para layout e estilos globais
+- Tem uma finalidade semelhante ao App.js ou index do React
+- Renderizado no Client e no Server
+
+### \_document.js
+
+- Usado para personalizar o HTML de todas as páginas em relação ao <head>
+- Pode ser usado para meta tags, scripts, estilos globais
+- É carregado no servidor na renderização inicial
